@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'konturIconic';
+  src: url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.eot?') format('eot'), url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.woff') format('woff'), url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.ttf') format('truetype'), url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: #404040;
+  line-height: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*---MyCustom---*/
+
+.rows{
+  padding: 100px 200px;
+}
+
+.label-b {
+ color: #404040;
+ position: relative;
+ top: 30px;
+ left: -50px;
+}
+
+.message {
+  position: static;
+  font-weight: normal;
+  color: #FF0000;
+}
+
+/*---auto---*/
+
+.autocomplete {
+  height: 35px;
+  width: 100%;
+  border: 2px solid #404040;
+  text-indent: 10px;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.autocomplete:focus {
+  border: 2px solid rgba(52, 152, 219, 1);
+  box-shadow: 0px 0px 0px 0px rgba(52, 152, 219, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.autocomplete:hover {
+  border: 2px solid rgba(52, 152, 219, 1);
+  box-shadow: 1px 1px 3px 1px rgba(52, 152, 219, 0.2) inset;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.autocomplete::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:focus::-webkit-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:focus::-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:focus:-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.autocomplete:focus:-ms-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  border-radius: 0px;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-corner-all {
+  border-radius: 0px;
+}
+
+.ui-menu .ui-menu-item a.ui-corner-all:hover,
+.ui-menu .ui-menu-item a.ui-corner-all:focus,
+.ui-menu .ui-menu-item a.ui-corner-all:active {
+  background: #0000CC!important;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.ui-widget-content {
+  color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border: 1px solid #404040;
+  background: transparent!important;
+}
+
+.ui-autocomplete .ui-menu-item {
+  background: white;
+}
+
+.ui-autocomplete .ui-state-focus {
+  border-radius: 0px;
+  border: 0px;
+  background: #0000CC;
+  color: #FFFFFF;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 0px;
+  background: #99CCFF;
+  color: #000000;
+  opacity: 0.7;
+  filter: alpha(Opacity=70);
+}
+
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .ui-autocomplete {
+  height: 200px;
+}
