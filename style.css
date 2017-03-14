@@ -25,9 +25,7 @@ body {
 
 .label-b {
  color: #404040;
- position: relative;
- top: 30px;
- left: -50px;
+ position: static;
 }
 
 .message {
@@ -40,7 +38,7 @@ body {
 
 .autocomplete {
   height: 35px;
-  width: 100%;
+  width: 200px;
   border: 2px solid #404040;
   text-indent: 10px;
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
