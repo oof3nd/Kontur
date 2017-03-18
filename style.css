@@ -31,7 +31,7 @@ body {
 .message {
   position: absolute; 
   top: 45px; 
-  right: 12px; 
+  right: 15px; 
   font-weight: normal;
   color: #FF0000;
 }
