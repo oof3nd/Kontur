@@ -15,7 +15,7 @@ $(document).ready(function() {
           success: function(data) {
             var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), "i");
             var chosenContacts = $.grep(data, function(item) {
-              return matcher.test(item.City) || matcher.test(item.Id);
+              return matcher.test(item.City);
             });
             var chosenEntries = $.map(chosenContacts, function(item) {
               return {
